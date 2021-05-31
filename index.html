@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPK Final Project</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">SPK : City Reccomendation</h1>
+            <p class="lead">Made by :</p>
+            <ul class="list-group">
+                <li class="list-group-item">18/427574/PA/18534 Diaz Saufa Yardha</li>
+                <li class="list-group-item">18/430269/PA/18782 Muhammad Lutfi Fahreza</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h2>Input :</h1>
+                <p>(0-10) 0 for low priotiry, 10 for highest priority</p>
+                <form action="/" id="inputForm">
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Wide Area</label>
+                        <input type="number" name="WideArea" id="WideArea" value=5 class="form-control" id="exampleFormControlFile1">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile2">Green Space</label>
+                        <input type="number" name="GreenSpace" id="GreenSpace" value=5 class="form-control" id="exampleFormControlFile2">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile3">Activity Center</label>
+                        <input type="number" name="ActivityCenter" id="ActivityCenter" value=5 class="form-control" id="exampleFormControlFile3">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile4">Public Transportation</label>
+                        <input type="number" name="PublicTransportation" id="PublicTransportation" value=5 class="form-control" id="exampleFormControlFile4">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile5">Population</label>
+                        <input type="number" name="Population" id="Population" value=5 class="form-control" id="exampleFormControlFile5">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile6">Living Cost</label>
+                        <input type="number" name="LivingCost" id="LivingCost" value=5 class="form-control" id="exampleFormControlFile6">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile7">Disasters</label>
+                        <input type="number" name="Disasters" id="Disasters" value=5 class="form-control" id="exampleFormControlFile7">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile8">Surface Height</label>
+                        <input type="number" name="SurfaceHeight" id="SurfaceHeight" value=5 class="form-control" id="exampleFormControlFile8">
+                    </div>
+                    <br>
+                    <button class="btn btn-primary">Generate</button>
+                </form>
+            </div>
+            <div class="col-sm list-group">
+                <h2>Result:</h2>
+                <ul id="result">
+                    <p>Complete the input form and click generate.</p>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
