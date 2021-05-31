@@ -1,6 +1,6 @@
 const cities = ["Tangerang", "Jakarta Pusat", "Bandung", "Semarang", "Yogyakarta", "Surabaya"]
 const cat = [
-    ["WideArea", "GreenSpace", "ActivityCenter", "PublicTransportation"],
+    ["WideArea", "GreenSpace", "ActivityCenter", "PublicTransportation"], 
     ["Population", "LivingCost", "Disasters", "SurfaceHeight"]
 ]
 const n_benefit = cat[0].length
@@ -20,7 +20,7 @@ const generateR = (values) => {
     // Find max or min
     maxmin = []
     for (let i = 0; i < n_cat; i++) {
-        if(i < n_cost){
+        if(i < n_benefit){
             max = values[0][i]
             for (let j = 0; j < cities.length; j++) {
                 if (max < values[j][i]){
@@ -55,6 +55,7 @@ const generateR = (values) => {
 }
 
 R = generateR(values)
+console.log("R : ",R)
 
 let input = [0,0,0,0,0,0,0,0]
 let result = []
@@ -87,6 +88,7 @@ const updateResult = (input) => {
     // Generate Weight
     let weight = input
     weight = updateWeight(weight)
+    console.log("Weight : ",weight)
 
     // Generate Result
     printResult = getResult(weight)
@@ -133,6 +135,6 @@ const getResult = (weight) => {
     }
     pairResult = pairResult.sort()
     pairResult = pairResult.reverse()
-    console.log(pairResult)
+    console.log("Result",pairResult)
     return pairResult
 }
